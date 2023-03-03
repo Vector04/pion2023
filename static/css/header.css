@@ -1,0 +1,79 @@
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(36, 36, 36);
+    padding-inline: 1rem;
+}
+
+
+.site-nav a {
+    padding: 1rem;
+    white-space: nowrap;
+    color: rgb(105, 125, 151);
+    text-decoration: none;
+}
+
+.site-nav a:is(:hover, :active, :focus) {
+    background: rgb(55, 55, 55);    
+}
+
+.site-nav .logo {
+    font-weight: bold;
+}
+
+
+#hamburger {
+    height: 3rem;
+    background: rgb(36, 36, 36);
+    border: none;
+    margin: .25rem;
+    padding-inline: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .3rem;
+
+    display: none;
+}
+
+#hamburger > div {
+    background:rgb(105, 125, 151);
+    width: 1.7rem;
+    height: .15rem;
+    border-radius: 0.075rem;
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+
+/* Very bad practise, but no other way */
+.flex {
+    display: flex !important;
+}
+
+@media (max-width: 64rem) {
+    .site-nav {
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+
+    .main-menu {
+        display: none;
+        grid-column: 1 / -1;
+        justify-self: end;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .main-menu a {
+        padding: .75rem 0 .75rem .75rem;
+    }
+
+    #hamburger {
+        display: flex;
+    }
+}
