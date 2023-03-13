@@ -12,7 +12,7 @@
 
 html,
 body {
-    height: 100svh;
+    min-height: 100svh;
 }
 
 img,
@@ -24,21 +24,54 @@ svg {
     max-width: 100%;
 }
 
+/* VARIABLES */
+
+:root {
+    --dark-one: rgb(36, 36, 36);
+    --light-one: rgb(105, 125, 151);
+    --dark-two: rgb(79, 78, 78);
+    --link-accent: rgb(0, 48, 208);
+    --link-visited: rgb(105, 36, 171);
+}
+
 
 /* LAYOUT */
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Typesetting of site */
+
+body {
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
     line-height: 1.5;
     color: black;
-
 }
 
 .content {
-    margin-bottom: 2rem;
+    flex: 1;
+    padding: 1rem 2rem 3rem 2rem;
 }
 
-/* NAVIGATION */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+h1, h2, h3, hr {
+    color: var(--dark-one)
+}
+
+a {
+    color: var(--link-accent);
+}
+
+a:visited {
+    color: var(--link-visited);
+}
 
 /* LISTS */
 

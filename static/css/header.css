@@ -1,7 +1,7 @@
 .site-nav {
     display: flex;
     justify-content: space-between;
-    background: rgb(36, 36, 36);
+    background: var(--dark-one);
     padding-inline: 1rem;
 }
 
@@ -9,7 +9,7 @@
 .site-nav a {
     padding: 1rem;
     white-space: nowrap;
-    color: rgb(105, 125, 151);
+    color: var(--light-one);
     text-decoration: none;
 }
 
@@ -23,12 +23,9 @@
 
 
 #hamburger {
-    height: 3rem;
-    background: rgb(36, 36, 36);
+    background: var(--dark-one);
     border: none;
-    margin: .25rem;
-    padding-inline: 1em;
-    display: flex;
+    padding: 0 .75em 0 0;
     flex-direction: column;
     justify-content: center;
     gap: .3rem;
@@ -37,7 +34,7 @@
 }
 
 #hamburger > div {
-    background:rgb(105, 125, 151);
+    background: var(--light-one);
     width: 1.7rem;
     height: .15rem;
     border-radius: 0.075rem;
@@ -50,7 +47,11 @@
 }
 
 
-/* Very bad practise, but no other way */
+#Home {
+    display: none;
+}
+
+/* Bad practise, but easiest way */
 .flex {
     display: flex !important;
 }
@@ -58,7 +59,7 @@
 @media (max-width: 64rem) {
     .site-nav {
         display: grid;
-        grid-template-columns: 1fr auto;
+        grid-template-columns: auto auto;
     }
 
     .main-menu {
@@ -67,13 +68,20 @@
         justify-self: end;
         flex-direction: column;
         align-items: flex-end;
+        padding-bottom: .3em;
     }
 
     .main-menu a {
-        padding: .75rem 0 .75rem .75rem;
+        padding: .75rem;
+        border-radius: .2em;
     }
 
     #hamburger {
         display: flex;
+        justify-self: end;
+    }
+
+    #Home {
+        display: inline;
     }
 }
