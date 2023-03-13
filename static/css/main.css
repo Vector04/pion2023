@@ -32,6 +32,7 @@ svg {
     --dark-two: rgb(79, 78, 78);
     --link-accent: rgb(0, 48, 208);
     --link-visited: rgb(105, 36, 171);
+    --accent-one: rgb(136, 183, 245);
 }
 
 
@@ -69,16 +70,30 @@ a {
     color: var(--link-accent);
 }
 
+/* PION marker for li items */
+
+ul > li {
+    list-style-type: none;
+    position: relative;
+}
+
+ul > li:before {
+    content: '';
+    height: 1em;
+    width: 1em;
+    background-image: url('/img/chess-pawn-solid-black.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -1.2em;
+    top: .15em;
+}
+
 a:visited {
     color: var(--link-visited);
 }
 
-/* LISTS */
-
-.post-snippet {
-    margin-bottom: 1rem;
-}
-
-.post-snippet h3 {
-    margin-bottom: 0.25rem;
+/* MISC Styling */
+#maps {
+    max-width: 100vw;
 }

@@ -19,7 +19,17 @@
 
 .site-nav .logo {
     font-weight: bold;
+    display: flex;
+    align-items: baseline;
+
 }
+
+.logo img {
+    height: 1rem;
+    width: 1rem;
+    fill: var(--light-one)
+}
+
 
 
 #hamburger {
@@ -44,6 +54,10 @@
     display: flex;
     align-items: center;
     list-style: none;
+}
+
+.active {
+    color: white !important;
 }
 
 
