@@ -1,7 +1,7 @@
 footer {
     background: var(--light-one); 
     color: white;
-    padding: 2em;
+    padding: var(--page-inline-padding);
     display: flex;   
     justify-content: space-between;
 }
@@ -18,4 +18,13 @@ footer a {
 
 footer a:is(:hover, :active) {
     text-decoration: underline;
+}
+
+
+@media (max-width: 40rem)  {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
 }

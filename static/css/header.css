@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     background: var(--dark-one);
-    padding-inline: 1rem;
+    padding-inline: calc(var(--page-inline-padding) - 1rem); /* a tags also have 1rem padding */
 }
 
 
