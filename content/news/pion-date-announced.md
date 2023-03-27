@@ -5,7 +5,7 @@ author: "Victor Vreede"
 summary: "The announcement of the PION date by the committee."
 ---
 
-Hello everyone, great news! Preparation for the PION event has started, the committee is having some great ideas for this years' ideas for pion. For now, we can announce the date at which pion will take place. Without further ado, we announce:
+Hello everyone, great news! Preparation for the PION event has started, the committee is having some great ideas for this years' PION. For now, we can announce the date at which pion will take place. Without further ado, we announce:
 <br> 
 
 **PION will take place on Saturday 18 november 2023.**
