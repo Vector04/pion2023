@@ -24,4 +24,3 @@ Conventionally the two winning teams will win a ticket for the international phy
 The event takes place on Saturday 22 April, 2023.  Are you interested in participating in this prestigious event, then please sign up before 14 April, 2023. For more information or questions you can contact us at pion@nsaweb.nl.
 
 
-

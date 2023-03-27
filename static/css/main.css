@@ -56,7 +56,7 @@ body {
 
 .content {
     flex: 1;
-    padding-block: 1rem 3rem;
+    padding: 1rem 3rem 1rem 1rem;
     padding-inline: var(--page-inline-padding);
 }
 
@@ -112,3 +112,4 @@ ul > li:before {
 #maps {
     max-width: 100vw;
 }
+

@@ -1,5 +1,22 @@
 {{ partial "header.html" . }}
 
 {{ .Content }}
+<br>
+
+{{- range ( where site.RegularPages "Section" "news" | first 1 )}}
+
+    <a style="text-decoration: none;" href="{{ .Permalink }}"><h2>Latest News: {{.Title}} </h2></a>
+    <i>{{ .Param "summary" }}</i>
+    <div class="meta">
+        <time datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00" }}">
+            {{ .Date.Format "January 2, 2006" }}
+        </time>
+        &#x2022
+        By {{ .Param "author" }}
+    </div>
+    <a class="btn" href="{{ .RelPermalink }}">
+        Read More
+    </a class="btn">
+{{- end }}
 
 {{ partial "footer.html" . }}
