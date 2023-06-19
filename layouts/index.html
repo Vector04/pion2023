@@ -2,7 +2,19 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> 
     <script src="/js/carousel.js"></script>
 {{ end }}
+
+{{define "submain"}}
+<div id="headline">
+
+<h1>PION Physics Olympiad 2023</h1>
+<i>PION is an annual interuniversity physics olympiad for bachelor and master students from all over the Netherlands. </i>
+
+</div>
+{{end}}
+
 {{ define "main" }}
+
+
 
 {{ .Content }}
 <br>
@@ -23,11 +35,13 @@
     </a class="btn">
 {{- end }}
 
+<br><br>
 
+<h2>Our Sponsors</h2>
 <div class="carousel-wrapper">
     <div class="carousel is-set">
 
-        {{- range ( where site.RegularPages "Section" "sponsors" )}}
+        {{ range ( where site.RegularPages "Section" "sponsors" ) | shuffle }}
     
         <div class="carousel-seat">
             <img class="carousel-item" src="/img/logo/{{ .Params.logo}}" alt="">

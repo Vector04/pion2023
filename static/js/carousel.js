@@ -1,5 +1,3 @@
-var carousel = $(".carousel");
-
 var next = function (el) {
     if (el.next().length > 0) {
         return el.next();
@@ -18,6 +16,7 @@ var progress = function (e) {
         console.log(new_seat);
     }
 
+    var carousel = $(".carousel");
     carousel.removeClass("is-set");
 
     return setTimeout(function () {
@@ -29,4 +28,4 @@ console.log($(".carousel > carousel-seat:last-child").addClass("is-ref"));
 
 window.setInterval(function () {
     progress();
-}, 2000);
+}, 4000);

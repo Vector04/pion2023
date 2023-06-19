@@ -10,11 +10,10 @@
     place-items: start center;
     height: 300px;
     padding: 0.5rem;
-    border-radius: 0.5rem;
-    border: 1px solid hsl(0, 0%, 23%);
-    background: hsl(0, 0%, 98%);
+    border-radius: 0.2rem;
+    background: hsl(0, 0%, 97%);
+    box-shadow: 0 0.3rem 0.3rem rgb(65, 67, 193, 0.1);
     text-decoration: none;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 .card:is(:hover:active) {

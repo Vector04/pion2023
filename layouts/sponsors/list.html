@@ -7,7 +7,7 @@
 {{ .Content }}
 <br />
 <div class="card-grid">
-    {{ range.Data.Pages }}
+    {{ range.Data.Pages | shuffle }}
 
     <a class="card" href="{{ .Permalink }}">
         <img src="/img/logo/{{.Params.logo}}" alt="{{.Params.logo}}" />
