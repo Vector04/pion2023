@@ -2,10 +2,10 @@ let navbarvisible = false;
 
 function toggleNavBar() {
     if (navbarvisible) {
-        document.querySelector(".main-menu").classList.remove("flex");
+        document.querySelector(".site-nav").classList.remove("main-menu-visible");
     }
     else {
-        document.querySelector(".main-menu").classList.add("flex");
+        document.querySelector(".site-nav").classList.add("main-menu-visible");
     }
     navbarvisible = !navbarvisible;
 

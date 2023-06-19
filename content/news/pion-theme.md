@@ -2,7 +2,7 @@
 title: "Pion Theme"
 date: 2023-04-19T11:00:00+02:00
 author: "Victor Vreede"
-summary: "The PION theme announcement"
+summary: "The PION theme announcement."
 math: true
 ---
 
