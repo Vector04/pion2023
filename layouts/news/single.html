@@ -1,9 +1,10 @@
-{{ partial "header.html" . }}
-<head>
+{{ define "header" }}
     <link rel="stylesheet" href="/css/news.css" type="text/css" media="all" />
     <link rel="stylesheet" href="/css/news-article.css" type="text/css" media="all" />
-</head> 
 
+{{ end }}
+
+{{ define "main" }}
 
 <header>
 <h1>News: {{ .Title }}</h1>
@@ -41,4 +42,4 @@
     {{ end }}
 </div>   
 
-{{ partial "footer.html" . }}
+{{ end }}

@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 
 <h1>{{ .Title }}</h1>
 <hr> <br>
@@ -11,12 +11,12 @@
   <h2>
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   </h2>
-	<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-		{{ .Date.Format "January 2, 2006" }}
-	</time>
+  <time datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00" }}">
+    {{ .Date.Format "January 2, 2006" }}
+  </time>
 </article>
 <hr class="article-seperator">
 
 {{ end }}
 
-{{ partial "footer.html" . }}
+{{ end }}
