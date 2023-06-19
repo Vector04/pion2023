@@ -1,3 +1,7 @@
+{{ define "header"}}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> 
+    <script src="/js/carousel.js"></script>
+{{ end }}
 {{ define "main" }}
 
 {{ .Content }}
@@ -18,5 +22,21 @@
         Read More
     </a class="btn">
 {{- end }}
+
+
+<div class="carousel-wrapper">
+    <div class="carousel is-set">
+
+        {{- range ( where site.RegularPages "Section" "sponsors" )}}
+    
+        <div class="carousel-seat">
+            <img class="carousel-item" src="/img/logo/{{ .Params.logo}}" alt="">
+        </div>
+    
+        {{ end }}
+
+    </div>
+</div>
+
 
 {{ end }}

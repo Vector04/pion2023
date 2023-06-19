@@ -6,15 +6,14 @@ menu:
         weight: 6
 ---
 
-
 The committee op PION 2023 consists of:
 
- - Diene van Batenburg - *Chair*
- - Victor Vreede - *Secretary*
- - Stella Dartée - *Treasaurer*
- - Noel Wallaart  
- - Jord Muffels
- - Melvin Room
+-   Diene van Batenburg - _Chair_
+-   Victor Vreede - _Secretary_
+-   Stella Dartée - _Treasurer_
+-   Noel Wallaart
+-   Jord Muffels
+-   Melvin Room
 
 <br>
 
