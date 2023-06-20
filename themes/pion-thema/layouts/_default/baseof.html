@@ -1,13 +1,22 @@
 {{ $seed := now.Unix }}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        {{ partial "header.html" . }} {{ block "header" . }} {{ end }}
+	{{ partial "header.html" . }}
+	<head>
+		{{ block "header" . }}
+        {{ end }}
     </head>
-
     <body>
-        {{ partial "nav.html" . }} {{ block "submain" . }} {{ end }}
-        <main class="content">{{ block "main" . }} {{ end }}</main>
+        {{ partial "nav.html" . }}
+
+        {{ block "submain" . }}
+        {{ end }}
+
+        <main class="content">
+            {{ block "main" . }}
+            {{ end }}
+        </main>
+        
         {{ partial "footer.html" . }}
     </body>
 </html>

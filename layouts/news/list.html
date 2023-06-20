@@ -1,36 +1,36 @@
 {{ define "header" }}
-  <link rel="stylesheet" href="/css/news.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/css/news.css" type="text/css" media="all"/>
 {{ end }}
 
 
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-<hr> 
+	<h1>{{ .Title }}</h1>
+	<hr>
 
-{{ .Content }}
-<br>
-{{ range.Data.Pages }}
+	{{ .Content }}
+	<br>
 
-<article class="article-list">
-  
-  <div class="meta">
-    <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-      {{ .Date.Format "January 2, 2006" }}
-    </time>
-    &#x2022
-    By {{ .Param "author" }}
-  </div>  
-  <h2>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-  </h2>
-  <i> 
-    {{.Param "summary"}}
-  </i><br>
-  <a class="btn" href="{{ .RelPermalink }}">
-    Read More
-  </a class="btn">
-</article>
+	{{ range.Data.Pages }}
 
-{{ end }}
+		<article class="article-list">
+
+			<div class="meta">
+				<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+					{{ .Date.Format "January 2, 2006" }}
+				</time>
+				&#x2022 By {{ .Param "author" }}
+			</div>
+			<h2>
+				<a href="{{ .Permalink }}">{{ .Title }}</a>
+			</h2>
+			<i>
+				{{ .Param "summary" }}
+			</i><br>
+			<a class="btn" href="{{ .RelPermalink }}">
+				Read More
+			</a>
+		</article>
+
+	{{ end }}
 
 {{ end }}

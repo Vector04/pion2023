@@ -1,25 +1,23 @@
 <header class="site-header">
-  <nav class="site-nav">
-    <a class="logo" href="{{ .Site.BaseURL }}">
-      <img src="/img/chess-pawn-solid-accent.svg" />
-      {{ .Site.Title }}
-    </a>
-    <button id="hamburger" onclick="toggleNavBar()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </button>
-    {{ $current := . }}
-    <ul class="main-menu">
-      {{ range.Site.Menus.main }} {{ $active := or ($current.IsMenuCurrent
-      "main" .) ($current.HasMenuCurrent "main" .) }}
-      <a
-        href="{{ .URL }}"
-        id="{{ .Name }}"
-        class="{{ if $active }}active{{ end }}"
-        >{{ .Name }}</a
-      >
-      {{ end }}
-    </ul>
-  </nav>
+	<nav class="site-nav">
+		<a class="logo" href="{{ .Site.BaseURL }}">
+			<img src="/img/chess-pawn-solid-accent.svg"/>
+			{{ .Site.Title }}
+		</a>
+
+		<button id="hamburger" onclick="toggleNavBar()">
+			<div></div>
+			<div></div>
+			<div></div>
+		</button>
+
+
+		{{ $current := . }}
+		<ul class="main-menu">
+			{{ range.Site.Menus.main }}
+				{{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+				<a href="{{ .URL }}" id="{{ .Name }}" class="{{ if $active }}active{{ end }}">{{ .Name }}</a>
+			{{ end }}
+		</ul>
+	</nav>
 </header>

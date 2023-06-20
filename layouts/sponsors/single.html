@@ -1,0 +1,13 @@
+{{ define "header" }}
+	<link rel="stylesheet" href="/css/sponsors.css" type="text/css" media="all"/>
+{{ end }}
+{{ define "main" }}
+	<h1>{{ .Title }}</h1>
+	<hr/>
+	<br/>
+
+	{{ .Content }}
+
+	<img id="main-sponsor-logo" src="/img/logo/{{.Params.logo}}" alt="{{.Params.logo}}"/>
+
+{{ end }}
