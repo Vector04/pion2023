@@ -1,0 +1,30 @@
+footer {
+    background: var(--light-one); 
+    color: white;
+    padding: var(--page-inline-padding);
+    display: flex;   
+    justify-content: space-between;
+}
+
+#nsa-logo {
+    display: inline;
+    height: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:is(:hover, :active) {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 40rem)  {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}

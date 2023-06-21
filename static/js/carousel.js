@@ -13,7 +13,6 @@ var progress = function (e) {
     new_seat.addClass("is-ref").css("order", 1);
     for (var i = 2, ref = $(".carousel-seat").length; i <= ref; i++) {
         new_seat = next(new_seat).css("order", i);
-        console.log(new_seat);
     }
 
     var carousel = $(".carousel");
@@ -23,8 +22,6 @@ var progress = function (e) {
         return carousel.addClass("is-set");
     }, 50);
 };
-
-console.log($(".carousel > carousel-seat:last-child").addClass("is-ref"));
 
 window.setInterval(function () {
     progress();

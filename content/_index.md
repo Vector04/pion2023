@@ -11,7 +11,7 @@ Every year one of the universities in the Netherlands organizes Project Interuni
 
 <br>
 
-This year's PION will take place on **19 November 2023**, at Science Park Amsterdam. Stay tuned for more updates.
+This year's PION will take place on **18 November 2023**, at Science Park Amsterdam. Stay tuned for more updates.
 
 <br>
 
