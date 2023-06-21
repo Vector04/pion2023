@@ -18,7 +18,7 @@
 
 	{{- range ( where site.RegularPages "Section" "news" | first 1 )}}
 
-		<a style="text-decoration: none;" href="{{ .Permalink }}">
+		<a style="text-decoration: none;" href="{{ .RelPermalink }}">
 			<h2>Latest News:
 				{{.Title}}
 			</h2>

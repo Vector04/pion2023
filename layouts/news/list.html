@@ -10,7 +10,7 @@
 	{{ .Content }}
 	<br>
 
-	{{ range.Data.Pages }}
+	{{ range .Pages }}
 
 		<article class="article-list">
 
@@ -21,7 +21,7 @@
 				&#x2022 By {{ .Param "author" }}
 			</div>
 			<h2>
-				<a href="{{ .Permalink }}">{{ .Title }}</a>
+				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 			</h2>
 			<i>
 				{{ .Param "summary" }}

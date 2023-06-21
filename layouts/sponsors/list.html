@@ -11,9 +11,9 @@
     <br />
 
     <div class="card-grid">
-        {{ range.Data.Pages | shuffle }}
+        {{ range .Pages.ByWeight }}
 
-            <a class="card" href="{{ .Permalink }}">
+            <a class="card" href="{{ .RelPermalink }}">
                 <img src="/img/logo/{{ .Params.logo }}" alt="{{ .Params.logo }}" />
                 <h2 class="card-title">{{ .Params.Title }}</h2>
             </a>
