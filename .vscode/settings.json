@@ -1,0 +1,12 @@
+{
+    "files.autoSave": "onFocusChange",
+    // "files.associations": {
+    //     "*.html": "twig"
+    // },
+    "emmet.excludeLanguages": [],
+    "tailwindCSS.emmetCompletions": true,
+    "emmet.includeLanguages": {
+        "twig": "html"
+    },
+    "editor.formatOnPaste": false
+}
