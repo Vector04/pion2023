@@ -1,10 +1,10 @@
 /* List-of-articles styling */
 .article-list {
     padding: 1rem;
-    border-radius: .2rem;
+    border-radius: 0.2rem;
     margin-bottom: 2rem;
     background: hsl(0, 0%, 97%);
-    box-shadow: 0 .3rem .3rem rgb(65, 67, 193, 0.1);      
+    box-shadow: 0 0.3rem 0.3rem rgb(65, 67, 193, 0.1);
 }
 
 .article-list a {
@@ -17,22 +17,20 @@
 }
 
 .meta {
-    color: var(--dark-two)
+    color: var(--dark-two);
 }
-
 
 /* "Read more" Buttons */
 .article-list .btn {
     display: block;
-    width:max-content;
-    margin-top: .3rem;
-    padding: .5rem .8rem;
+    width: max-content;
+    margin-top: 0.3rem;
+    padding: 0.5rem 0.8rem;
     background: rgb(65, 67, 193);
     color: white;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     border: 2px solid rgb(65, 67, 193);
 }
-
 
 .article-list .btn:is(:hover, :active) {
     background: white;

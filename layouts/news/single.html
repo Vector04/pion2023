@@ -1,45 +1,48 @@
 {{ define "header" }}
-    <link rel="stylesheet" href="/css/news.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="/css/news-article.css" type="text/css" media="all" />
+
+	<link rel="stylesheet" href="/css/news.css" type="text/css" media="all"/>
+	<link rel="stylesheet" href="/css/news-article.css" type="text/css" media="all"/>
 
 {{ end }}
 
 {{ define "main" }}
 
-<header>
-<h1>News: {{ .Title }}</h1>
-<hr>
-<div class="meta">
-    <time datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00" }}">
-        {{ .Date.Format "January 2, 2006" }}
-    </time>
-    &#x2022
-    By {{ .Param "author" }}
-</div>
- <br>
-</header>
-<article>   
+	<header>
+		<h1>
+			News: {{ .Title }}
+		</h1>
+		<hr>
+		<div class="meta">
+			<time datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00" }}">
+				{{ .Date.Format "January 2, 2006" }}
+			</time>
+			&#x2022 By {{ .Param "author" }}
+		</div>
+		<br>
+	</header>
 
-{{ .Content }}
+	<article>
+		{{ .Content }}
+	</article>
 
-</article>
+	<div class="article-footer">
+		{{ if .PrevInSection }}
+			<div id="prev"> 
+				&larr;
+				<a href="{{ .PrevInSection.Permalink }}">{{.PrevInSection.Title }}</a>
+			</div>
+		{{ end }}
 
-<div class="article-footer">
-    {{ if .PrevInSection }}
-    <div id="prev">
-        &larr; <a href="{{ .PrevInSection.Permalink }}"> {{.PrevInSection.Title }}</a>
-    </div>
-    {{ end }}
+		<div id="news">
+			<a href="/news/">All news</a>
+		</div>
 
-    <div id="news">   
-        <a href="/news/">All news</a>
-    </div>
-
-    {{ if .NextInSection }}
-    <div id="next">
-        <a href="{{ .NextInSection.Permalink }}"> {{.NextInSection.Title }}</a> &rarr;
-    </div>
-    {{ end }}
-</div>   
+		{{ if .NextInSection }}
+			<div id="next">
+				<a href="{{ .NextInSection.Permalink }}">{{.NextInSection.Title }}</a>
+				&rarr;
+			</div>
+		{{ end }}
+	</div>
 
 {{ end }}

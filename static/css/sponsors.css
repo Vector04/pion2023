@@ -30,3 +30,7 @@
 .card-title:is(:hover, :active) {
     text-decoration: underline;
 }
+
+#main-sponsor-logo {
+    max-width: 30vw;
+}
