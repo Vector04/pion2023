@@ -5,9 +5,7 @@
     transition: grid-template-rows 400ms ease-in-out;
     justify-content: space-between;
     background: var(--dark-one);
-    padding-inline: calc(
-        var(--page-inline-padding) - 1rem
-    ); /* a tags also have 1rem padding */
+    padding-inline: var(--page-inline-padding)
 }
 
 .site-nav a {
@@ -36,11 +34,12 @@
 #hamburger {
     background: var(--dark-one);
     border: none;
-    padding: 0 0.75em 0 0;
     flex-direction: column;
     justify-content: center;
     gap: 0.3rem;
     display: none;
+    justify-self: end;
+    padding-right: .75rem;
 }
 
 #hamburger > div {
