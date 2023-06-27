@@ -124,7 +124,7 @@ blockquote {
     background: hsl(0, 0%, 98%);
     border-left: 0.5rem solid var(--light-one);
     margin-block: 0.5rem;
-    padding: 2em .5em;
+    padding: 2em 1em;
     quotes: "\201C""\201D""\2018""\2019";
 }
 
@@ -134,11 +134,12 @@ blockquote:before {
     font-size: 4em;
     line-height: 0.1em;
     margin-right: 0.25em;
-    vertical-align: -0.5em;
+    vertical-align: -0.2em;
 }
 blockquote p {
     display: inline;
     font-size: 1.1rem;
+    animation: fadeIn 1s ease;
 }
 
 /* MISC Styling */
