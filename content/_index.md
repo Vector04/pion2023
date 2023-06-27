@@ -5,6 +5,8 @@ menu:
         weight: 1
 ---
 
+<br>
+
 ## Project Interuniversitaire Olympiade Natuurkunde
 
 Every year one of the universities in the Netherlands organizes Project Interuniversitaire Olympiade Natuurkunde (PION) and this year the honour is awarded to the NSA. PION is a physics olympiad for bachelor and master students from all over the Netherlands and is well supported by names like Robbert Dijkgraaf and Gerard ‘t Hooft.
@@ -15,4 +17,13 @@ This year's PION will take place on **18 November 2023**, at Science Park Amster
 
 <br>
 
-Conventionally the two winning teams will win a ticket for the international physics olympiad: Physics League Across Numerous Countries for Kick-ass Students (PLANCKS). It will take place in Milan, Italy. For more info about PLANKS, please visit this [link](https://iaps.info/events/plancks/plancks-2023-in-milan/).
+Conventionally the two winning teams will win a ticket for the international physics olympiad: Physics League Across Numerous Countries for Kick-ass Students (PLANCKS). It will take place in Milan, Italy. For more info about PLANCKS, please visit this [link](https://iaps.info/events/plancks/plancks-2023-in-milan/).
+
+<br>
+<br>
+
+
+> PION is first and foremost a celebration of physics, and a challenge and source of inspiration for our next generation of scientists and problem-solvers! I am very proud to support their efforts, and I hope that I can encourage you to do the same!
+> \- _Prof. dr. Anna Watts (Programme director Bachelor Physics & Astronomy Amsterdam (jd))_
+
+<br>

@@ -1,0 +1,29 @@
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min(300px, 100%));
+    gap: 2rem;
+}
+
+.card {
+    display: grid;
+    grid-auto-flow: row;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    background: hsl(0, 0%, 97%);
+    box-shadow: 0 0.3rem 0.3rem rgb(65, 67, 193, 0.1);
+    text-decoration: none;
+}
+
+.card:is(:hover:active) {
+    background: hsl(0, 0%, 99%);
+}
+.card img {
+    object-fit: contain;
+    border-radius: 0.2rem;
+
+}
+
+.card-title {
+    align-self: start;
+    font-size: 1.5rem;
+}

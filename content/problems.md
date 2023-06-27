@@ -8,6 +8,7 @@ menu:
 
 Here are the problems and solutions of previous years' PION.
 
+ - 2020: [Problems](/docs/opg_2020.pdf) and [Answers](/docs/ant_2020.pdf)
  - 2019: [Problems](/docs/opg_2019.pdf) and [Answers](/docs/ant_2019.pdf)
  - 2018: [Problems](/docs/opg_2018.pdf) and [Answers](/docs/ant_2018.pdf)
  - 2016: [Problems](/docs/opg_2016.pdf) and [Answers](/docs/ant_2016.pdf)
