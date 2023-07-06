@@ -13,6 +13,7 @@ The committee op PION 2023 consists of:
 -   Stella Dartée - _Treasurer_
 -   Noel Wallaart
 -   Jord Muffels
+-   Reijer Boodt
 -   Melvin Room
 
 <br>

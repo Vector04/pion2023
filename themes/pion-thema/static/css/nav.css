@@ -75,11 +75,13 @@
         justify-self: end;
         flex-direction: column;
         align-items: flex-end;
+        transition: all 400ms ease;
     }
 
     .main-menu a {
         padding: 0.75rem;
         border-radius: 0.2em;
+        opacity: 0;
     }
 
     .main-menu a:last-child {
