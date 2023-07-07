@@ -23,15 +23,6 @@
     animation: moveDown ease 1s;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 @keyframes moveDown {
     from {
         transform: translateY(-1rem);

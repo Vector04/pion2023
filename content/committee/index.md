@@ -4,7 +4,12 @@ date: 2023-03-02T21:27:37+01:00
 menu:
     main:
         weight: 6
-layout: committee
+resources:
+  - name: main
+    src: committee-main.jpg
+    params:
+        alt: The PION Committee
+        caption: "From left to right: Reijer, Diene, Stella, Jord, Noël, Victor"
 ---
 
 The committee op PION 2023 consists of:
