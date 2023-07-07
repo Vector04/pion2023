@@ -17,7 +17,7 @@ This year's PION will take place on **18 November 2023**, at Science Park Amster
 
 <br>
 
-Conventionally the two winning teams will win a ticket for the international physics olympiad: Physics League Across Numerous Countries for Kick-ass Students (PLANCKS). It will take place in Milan, Italy. For more info about PLANCKS, please visit this [link](https://iaps.info/events/plancks/plancks-2023-in-milan/).
+Conventionally the two winning teams will win a ticket for the international physics olympiad: Physics League Across Numerous Countries for Kick-ass Students (PLANCKS). It will take place in Dublin, Great Britain in April 2024. For more info about PLANCKS, please visit this [link](https://iaps.info/events/plancks/plancks-2023-in-milan/).
 
 <br>
 <br>
