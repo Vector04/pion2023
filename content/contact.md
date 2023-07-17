@@ -6,7 +6,7 @@ menu:
         weight: 7
 ---
 
-The [committee](/committee) is available for questions about the event via pion@nsaweb.nl.
+The [committee]({{< ref "/committee" >}} "comittee") is available for questions about the event via pion@nsaweb.nl.
 This year, PION is organised by the [NSA](https://nsaweb.nl). The pion takes place at Science Park, Amsterdam.  <br>The NSA is located at:
 
 <br>
