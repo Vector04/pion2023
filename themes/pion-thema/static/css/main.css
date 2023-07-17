@@ -35,13 +35,12 @@ svg {
     --accent-one: rgb(136, 183, 245);
 
     --page-inline-padding: clamp(1rem, 3vw, 2rem);
+    --page-width: min(80rem, 100vw);
 }
 
-/* LAYOUT */
-
 body {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 /* Typesetting of site */
@@ -55,9 +54,10 @@ body {
 .content {
     position: relative;
     isolation: isolate;
-    flex: 1;
     padding: 1rem 3rem 1rem 1rem;
     padding-inline: var(--page-inline-padding);
+    width: var(--page-width);
+    margin-inline: auto;
     z-index: 1;
 }
 
@@ -105,7 +105,7 @@ a:visited {
 }
 
 .img-wrap {
-    justify-self: start;
+    justify-self: end;
     animation: fadeIn ease 1s;
 }
 
@@ -119,6 +119,10 @@ a:visited {
 @media (max-width: 64rem) {
     .main-cols {
         grid-template-columns: unset;
+    }
+
+    .img-wrap {
+        justify-self: start;
     }
 }
 

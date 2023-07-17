@@ -11,7 +11,7 @@ params:
   title: PION 2023
 
 
-disableKinds: ['taxonomy', 'term', 'tags']
+disableKinds: ['taxonomy', 'term', 'tags', 'categories']
 
 markup:
   defaultMarkdownHandler: goldmark

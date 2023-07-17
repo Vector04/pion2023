@@ -1,12 +1,17 @@
+.site-header {
+    background: var(--dark-one);
+}
+
 .site-nav {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto 0fr;
     transition: grid-template-rows 400ms ease-in-out;
     justify-content: space-between;
-    background: var(--dark-one);
-    padding-inline: var(--page-inline-padding)
-}
+    padding-inline: var(--page-inline-padding);
+    width: var(--page-width);
+    margin-inline: auto;
+}   
 
 .site-nav a {
     padding: 1rem;
