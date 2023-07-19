@@ -4,9 +4,6 @@ menu:
     main:
         weight: 1
 ---
-
-<br>
-
 ## Project Interuniversitaire Olympiade Natuurkunde
 
 Every year one of the universities in the Netherlands organizes Project Interuniversitaire Olympiade Natuurkunde (PION) and this year the honour is awarded to the NSA. PION is a physics olympiad for bachelor and master students from all over the Netherlands and is well supported by names like Robbert Dijkgraaf and Gerard ‘t Hooft.

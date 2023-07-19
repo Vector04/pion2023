@@ -43,10 +43,72 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+/* Font */
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'),
+        url('/font/OpenSans-Semibold.woff2') format('woff2'),
+        url('/font/OpenSans-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light'), local('OpenSans-Light'),
+        url('/font/OpenSans-Light.woff2') format('woff2'),
+        url('/font/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Bold'), local('OpenSans-Bold'),
+        url('/font/OpenSans-Bold.woff2') format('woff2'),
+        url('/font/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Italic'), local('OpenSans-Italic'),
+        url('/font/OpenSans-Italic.woff2') format('woff2'),
+        url('/font/OpenSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'),
+        url('/font/OpenSans-BoldItalic.woff2') format('woff2'),
+        url('/font/OpenSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'),
+        url('/font/OpenSans.woff2') format('woff2'),
+        url('/font/OpenSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Typesetting of site */
 
 body {
-    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     line-height: 1.5;
     color: black;
 }
@@ -77,15 +139,20 @@ body {
 
 h1 {
     font-size: 2.5rem;
-    font-weight: 100;
+    font-weight: 300;
+    color: var(--dark-one);
+    text-wrap: balance
 }
 
-h1,
 h2,
-h3,
+h3 {
+    line-height: 1.7em;
+    color: var(--dark-one);    
+}
+
 hr {
     color: var(--dark-one);
-    text-wrap: balance;
+    margin-bottom: .4rem;
 }
 
 a {
