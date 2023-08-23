@@ -130,3 +130,8 @@ form hr {
     --bg: rgb(7, 185, 99);
     justify-self: end;
 }
+
+label.required::after {
+    content: ' *';
+    color: red;
+}

@@ -12,15 +12,16 @@
 
             <h2>Student ${s}</h2>
             <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" name="student-${s}-name" placeholder="Student Name">
-                <label for="student-${s}-phone">Phone Number:</label>
-                <input type="text" name="student-${s}-phone" placeholder="Phone Number">
+                <label for="name" class="required">Name:</label>
+                <input type="text" name="student-${s}-name" placeholder="Student Name" required>
+                <label for="student-${s}-phone" class="required">Phone Number:</label>
+                <input type="text" name="student-${s}-phone" placeholder="Phone Number" required>
             </div>
             <div class="form-group">
 
-                <label for="programme">Year: (Click to select)</label>
-                <select name="student-${s}-year">
+                <label for="programme" class="required">Year: (Click to Select)</label>
+                <select name="student-${s}-year" required>
+                    <option value="" default>Select a Year</option>
                     <option value="bsc-1">Bachelor Year 1</option>
                     <option value="bsc-2">Bachelor Year 2</option>
                     <option value="bsc-3">Bachelor Year 3 (or higher)</option>
@@ -57,15 +58,15 @@
 
 <form action="https://formspree.io/f/xrgwqlyk" method="POST" id="registerform">
     <div class="form-group">
-        <label for="teamname">Team Name:</label>
-        <input type="text" name="teamname" placeholder="Team Name">
-        <label for="email">Team Email:</label>
-        <input type="text" name="email"  placeholder="Email">
+        <label for="teamname" class="required">Team Name:</label>
+        <input type="text" name="teamname" placeholder="Team Name" required>
+        <label for="email" class="required">Team Email:</label>
+        <input type="email" name="email"  placeholder="Email" required>
     </div>
 
     <div class="form-group">
-        <label for="university">University: </label>
-        <input type="text" name="university" placeholder="University">
+        <label for="university" class="required">University: </label>
+        <input type="text" name="university" placeholder="University" required>
     </div>
 
     <label for="comments">Any comments about the team:</label>
