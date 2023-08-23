@@ -85,7 +85,7 @@
 
     .main-menu a {
         padding: 0.75rem;
-        border-radius: 0.2em;
+        border-radius: var(--main-border-radius);
         opacity: 0;
     }
 
