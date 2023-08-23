@@ -1,0 +1,81 @@
+{{ define  "header" }}
+    <link rel="stylesheet" href="/css/forms.css">
+
+    <script>
+        var s = 1
+
+        function addStudent() {
+            document.getElementById('students').innerHTML += 
+            /*html*/ `
+            <div id="student-${s}">
+            <hr>
+
+            <h2>Student ${s}</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="student-${s}-name" placeholder="Student Name">
+                <label for="student-${s}-phone">Phone Number:</label>
+                <input type="text" name="student-${s}-phone" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+
+                <label for="programme">Year: (Click to select)</label>
+                <select name="student-${s}-year">
+                    <option value="bsc-1">Bachelor Year 1</option>
+                    <option value="bsc-2">Bachelor Year 2</option>
+                    <option value="bsc-3">Bachelor Year 3 (or higher)</option>
+                    <option value="msc-1">Master Year 1</option>
+                    <option value="msc-2">Master Year 2 (or higher)</option>
+                </select>
+                <label for="student-${s}-food">Diet preferences and/or allergies</label>
+                <input type="text" name="student-${s}-food" placeholder="My preferences">
+            </div>
+            </div>
+            `;
+            s += 1
+        }
+
+        function removeStudent() {
+            document.getElementById(`student-${s-1}`).remove();
+            s -= 1;
+        }
+    addEventListener('load', addStudent);
+    </script>
+{{ end }}
+
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<hr />
+
+{{ .Content }}
+
+<br />
+
+<form action="https://formspree.io/f/xrgwqlyk" method="POST" id="registerform">
+    <div class="form-group">
+        <label for="teamname">Team Name:</label>
+        <input type="text" name="teamname" placeholder="Team Name">
+        <label for="email">Team Email:</label>
+        <input type="text" name="email"  placeholder="Email">
+    </div>
+
+    <div class="form-group">
+        <label for="university">University: </label>
+        <input type="text" name="university" placeholder="University">
+    </div>
+
+    <label for="comments">Any comments about the team:</label>
+    <input type="text" name="comments" placeholder="Any comments here">
+
+    <div id="students"></div>
+
+    <div class="buttons-wrapper">
+        <button id="remove-student" class="btn" type="button" onclick="removeStudent()">Remove Student</button>
+        <button id="add-student" class="btn" type="button" onclick="addStudent()">Add Student</button>
+
+        <button id="submit" class="btn" type="submit">Register</button>
+    </div>
+</form>
+
+
+{{ end }}
