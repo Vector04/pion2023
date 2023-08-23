@@ -33,11 +33,15 @@
             </div>
             `;
             s += 1
+            document.getElementById('remove-student').disabled = (s == 2)
+            document.getElementById('add-student').disabled = (s == 5)
         }
 
         function removeStudent() {
             document.getElementById(`student-${s-1}`).remove();
             s -= 1;
+            document.getElementById('remove-student').disabled = (s == 2)
+            document.getElementById('add-student').disabled = (s == 5)
         }
     addEventListener('load', addStudent);
     </script>
@@ -70,7 +74,7 @@
     <div id="students"></div>
 
     <div class="buttons-wrapper">
-        <button id="remove-student" class="btn" type="button" onclick="removeStudent()">Remove Student</button>
+        <button id="remove-student" class="btn" type="button" onclick="removeStudent()" disabled>Remove Student</button>
         <button id="add-student" class="btn" type="button" onclick="addStudent()">Add Student</button>
 
         <button id="submit" class="btn" type="submit">Register</button>

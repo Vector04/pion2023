@@ -104,6 +104,13 @@ form hr {
     color: var(--bg);
 }
 
+.btn:disabled {
+    background-color: rgb(176, 176, 176);
+    border: none;
+    color: rgb(219, 219, 219);  
+    cursor: not-allowed;
+}
+
 #add-student {
     --bg: rgb(32, 3, 196);
 }
