@@ -5,37 +5,49 @@
 {{ end }}
 
 {{define "submain"}}
-	<div id="headline">
-		<h1>PION Physics Olympiad 2023</h1>
-		<i>PION is an annual interuniversity physics olympiad for bachelor and master students from all over the Netherlands.
-		</i>
+	<div class="page-wrapper">
+		<div id="headline" class="">
+			<h1 class="leading-none">PION 2023</h1>
+			<span class="text-2xl ">Physics Olympiad</span>
+			<span class="text-lg">18 november 2023</span>
+
+			<!-- <i>
+				PION is an annual interuniversity physics olympiad for bachelor and master students from all over the Netherlands.
+			</i> -->
+		</div>
 	</div>
 {{end}}
 
 {{ define "main" }}
-	{{ .Content }}
-	<br>
 
-	{{- range ( where site.RegularPages "Section" "news" | first 1 )}}
+	
+	<div id="section-introduction">
+		{{ .Content }}
+	</div>
 
-		<a style="text-decoration: none;" href="{{ .RelPermalink }}">
-			<h2>Latest News:
-				{{.Title}}
-			</h2>
-		</a>
-		<i>{{ .Param "summary" }}</i>
-		<div class="meta">
-			<time datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00" }}">
-				{{ .Date.Format "January 2, 2006" }}
-			</time>
-			&#x2022
-												        By
-			{{ .Param "author" }}
-		</div>
-		<a class="btn" href="{{ .RelPermalink }}">
-			Read More
-		</a>
-	{{- end }}
+	<div id="section-news">
+
+		{{- range ( where site.RegularPages "Section" "news" | first 1 )}}
+	
+			<a style="text-decoration: none;" href="{{ .RelPermalink }}">
+				<h2>Latest News:
+					{{.Title}}
+				</h2>
+			</a>
+			<i>{{ .Param "summary" }}</i>
+			<div class="meta">
+				<time datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00" }}">
+					{{ .Date.Format "January 2, 2006" }}
+				</time>
+				&#x2022
+															By
+				{{ .Param "author" }}
+			</div>
+			<a class="btn" href="{{ .RelPermalink }}">
+				Read More
+			</a>
+		{{- end }}
+	</div>
 
 	<br><br><br>
 

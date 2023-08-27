@@ -1,5 +1,8 @@
 .site-header {
-    background: var(--dark-one);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
 }
 
 .site-nav {
@@ -11,12 +14,18 @@
     padding-inline: var(--page-inline-padding);
     width: var(--page-width);
     margin-inline: auto;
+
+    border-radius: 0 0 var(--large-border-radius) var(--large-border-radius);
+    background: var(--dark-one);
 }   
 
 .site-nav a {
-    padding: 1rem;
+    padding: 1rem 1.25rem;
     white-space: nowrap;
-    color: var(--light-one);
+    color: var(--accent-one);
+    filter:brightness(125%);
+    font-weight: 300;
+    font-size: large;
     text-decoration: none;
 }
 
