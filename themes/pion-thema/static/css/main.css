@@ -125,7 +125,7 @@ body {
     z-index: 1;
 }
 
-.content::before {
+body::before {
     content: "";
     position: absolute;
     inset: 0;
