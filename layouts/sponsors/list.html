@@ -15,7 +15,13 @@
 
             <a class="card" href="{{ .RelPermalink }}">
                 <img src="/img/logo/{{ .Params.logo }}" alt="{{ .Params.logo }}" />
-                <h2 class="card-title">{{ .Params.Title }}</h2>
+                <h2 class="card-title">
+                    {{ if .Params.Name }}
+                        {{ .Params.Name}}
+                    {{ else }}
+                        {{ .Params.Title }}
+                    {{ end }}
+                </h2>
             </a>
 
         {{ end }}

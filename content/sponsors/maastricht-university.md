@@ -1,7 +1,7 @@
 ---
 title: "Maastricht University | Faculty of Science and Engineering"
-slug: maastricht-university
 logo: "maastricht-university.jpg"
+name: "MSc Imaging Engineering & MSc Systems Biology"
 ---
 
 ## MSc Imaging Engineering
