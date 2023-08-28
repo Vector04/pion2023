@@ -50,19 +50,22 @@
 	</div>
 
 	<br><br><br>
-
-	<h2>Our Sponsors</h2>
-	<div class="carousel-wrapper">
-		<div class="carousel is-set">
-
-			{{ range ( where site.RegularPages "Section" "sponsors" ) | shuffle }}
-
-				<div class="carousel-seat">
-					<img class="carousel-item" src="/img/logo/{{ .Params.logo}}" alt="">
-				</div>
-
-			{{ end }}
-
+	<div id="section-sponsors">
+		<h2>Our Sponsors</h2>
+		<div class="carousel-wrapper">
+			<div class="carousel is-set">
+	
+				{{ range ( where site.RegularPages "Section" "sponsors" ) | shuffle }}
+	
+					<div class="carousel-seat">
+						<a href="{{.Permalink}}">
+							<img class="carousel-item" src="/img/logo/{{ .Params.logo}}" alt="{{ .Name}}">
+						</a>
+					</div>
+	
+				{{ end }}
+	
+			</div>
 		</div>
 	</div>
 	<br>

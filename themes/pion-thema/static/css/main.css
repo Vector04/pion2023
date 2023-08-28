@@ -34,6 +34,8 @@ svg {
     --link-visited: rgb(105, 36, 171);
     --accent-one: rgb(136, 183, 245);
 
+    --content-bg: rgb(245, 252, 255);
+
     --page-inline-padding: clamp(1rem, 3vw, 2rem);
     --page-width: min(80rem, 100vw);
 
@@ -124,8 +126,15 @@ body {
     padding-inline: var(--page-inline-padding);
     width: var(--page-width);
     margin-inline: auto;
+    margin-block: 1rem 2rem;
     z-index: 1;
     flex-grow: 1;
+    background: var(--content-bg);
+    border-radius: var(--large-border-radius);
+    
+    /* stolen from tailwind: shadow-lg */
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
 }
 
 body::before {
