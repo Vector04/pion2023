@@ -34,7 +34,7 @@ svg {
     --link-visited: rgb(105, 36, 171);
     --accent-one: rgb(136, 183, 245);
 
-    --content-bg: rgb(245, 252, 255);
+    --content-bg: rgba(250, 250, 250, 0.98);
 
     --page-inline-padding: clamp(1rem, 3vw, 2rem);
     --page-width: min(80rem, 100vw);
