@@ -68,5 +68,16 @@
 			</div>
 		</div>
 	</div>
+
+	<div id="section-problems">
+		<h2>Old questions</h2>
+
+		{{ with .Site.GetPage "page" "problems.md" }}
+			{{ .Content }}
+		{{ end }}
+	</div>
+
+	
+
 	<br>
 {{ end }}

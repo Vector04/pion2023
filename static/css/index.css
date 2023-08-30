@@ -57,7 +57,8 @@
 
 #section-introduction,
 #section-news,
-#section-sponsors {
+#section-sponsors,
+#section-problems {
     /* not sure.... i am bad at design after all */
     background-color: var(--content-bg);
     
