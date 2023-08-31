@@ -274,14 +274,42 @@ blockquote p {
     animation: fadeIn 1s ease;
 }
 
-/* MISC Styling */
-#maps {
-    max-width: 100vw;
+/* Card grid styling */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    display: grid;
+    align-content: start;
+    padding: 0.5rem;
+    border-radius: var(--main-border-radius);
+    background: hsl(0, 0%, 97%);
+    box-shadow: 0 0.3rem 0.3rem rgb(65, 67, 193, 0.1);
+    text-decoration: none;
+}
+
+.card img {
+    border-radius: var(--main-border-radius);
+}
+
+.card-title {
+    align-self: start;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .sequential-fadein > * {
     transition: all 400ms ease;
     opacity: 0;
+}
+
+/* MISC Styling */
+#maps {
+    max-width: 100vw;
 }
 
 .visible {
