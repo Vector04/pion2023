@@ -18,6 +18,7 @@
 .card:is(:hover:active) {
     background: hsl(0, 0%, 99%);
 }
+
 .card img {
     object-fit: contain;
     border-radius: var(--main-border-radius);
