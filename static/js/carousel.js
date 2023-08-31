@@ -3,7 +3,6 @@ const next = (el) => el.next().length ? el.next() : $(".carousel-seat").first();
 function progress (e) {
     let el = $(".is-ref").removeClass("is-ref");
     let new_seat = next(el);
-    console.log(new_seat)
 
     new_seat.addClass("is-ref").css("order", 1);
     const ref = $(".carousel-seat").length;

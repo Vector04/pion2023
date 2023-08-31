@@ -8,13 +8,13 @@
     "1": {
         "name": "Prof. dr. A.L. Watts",
         "src": "watts.jpg",
-        "desc": "Programme Director Bachelor Physics &amp; Astronomy Amsterdam"
+        "desc": "Programme Director Bachelor Physics & Astronomy Amsterdam"
     },
 
     "2": {
         "name": "Prof. dr. J. F. de Boer",
         "src": "deboer.jpg",
-        "desc": "Head of the Department of Physics &amp; Astronomy VU"
+        "desc": "Head of the Department of Physics & Astronomy VU"
     },
 
     "3": {
@@ -26,18 +26,18 @@
     "4": {
         "name": "Prof. dr. M. Vreeswijk",
         "src": "vreeswijk.jpg",
-        "desc": "Professor at University of Amsterdam &amp; researcher at Nikhef"
+        "desc": "Professor at University of Amsterdam & researcher at Nikhef"
     },
 
     "5": {
         "name": "Prof. dr. L. Kaper",
         "src": "kaper.jpg",
-        "desc": "Professor at Anton Pannekoek Institute of Astronomy &amp; Vice Dean Faculty of Science at University of Amsterdam"
+        "desc": "Professor at Anton Pannekoek Institute of Astronomy & Vice Dean Faculty of Science at University of Amsterdam"
     },
 
     "6": {
         "name": "Prof. dr. C. Dominik",
         "src": "dominik.jpg",
-        "desc": "Professor for astronomy &amp; Director of the Anton Pannekoek Institute of Astronomy"
+        "desc": "Professor for astronomy & Director of the Anton Pannekoek Institute of Astronomy"
     }
 }
