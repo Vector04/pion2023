@@ -111,6 +111,15 @@ body {
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'PT Mono';
+    src: url('/font/PTMono-Regular.woff2') format('woff2'),
+        url('/font/PTMono-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Typesetting of site */
 
 body {
