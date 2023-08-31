@@ -135,7 +135,7 @@ body {
     padding-inline: var(--page-inline-padding);
     width: var(--page-width);
     margin-inline: auto;
-    margin-block: 1rem 2rem;
+    margin-block: 5rem 2rem;
     z-index: 1;
     flex-grow: 1;
     background: var(--content-bg);
@@ -292,11 +292,4 @@ blockquote p {
 
 .visible {
     opacity: 1 !important;
-}
-
-.page-wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
 }

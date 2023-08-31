@@ -42,7 +42,6 @@
 }
 
 #headline h1 {
-    /* align-self: end; */
     font-size: clamp(3rem, 7vw, 5rem);
 }
 

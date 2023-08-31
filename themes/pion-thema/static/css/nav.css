@@ -1,3 +1,10 @@
+.site-header {
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+}
+
 .site-nav {
     display: grid;
     grid-template-columns: auto auto;
@@ -8,9 +15,14 @@
     width: var(--page-width);
     margin-inline: auto;
 
-    border-radius: 0 0 var(--large-border-radius) var(--large-border-radius);
     background: var(--dark-one);
 }   
+
+@media (min-width: 80rem) {
+    .site-nav {
+        border-radius: 0 0 var(--large-border-radius) var(--large-border-radius);
+    }
+}
 
 .site-nav a {
     padding: 1rem 1.25rem;
@@ -76,7 +88,7 @@
     grid-template-rows: auto 1fr;
 }
 
-@media (max-width: 64rem) {
+@media (max-width: 68rem) {
     .main-menu {
         grid-column: 1 / -1;
         justify-self: end;
