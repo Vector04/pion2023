@@ -2,6 +2,7 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 	<script src="/js/carousel.js"></script>
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/reference-committee.css">
 {{ end }}
 
 {{define "submain"}}
@@ -21,11 +22,11 @@
 {{ define "main" }}
 
 	
-	<div id="section-introduction">
+	<section id="section-introduction">
 		{{ .Content }}
-	</div>
+	</section>
 
-	<div id="section-news">
+	<section id="section-news">
 
 		{{- range ( where site.RegularPages "Section" "news" | first 1 )}}
 	
@@ -47,9 +48,9 @@
 				Read More
 			</a>
 		{{- end }}
-	</div>
+	</section>
 
-	<div id="section-sponsors">
+	<section id="section-sponsors">
 		<h2>Our Sponsors</h2>
 		<div class="carousel-wrapper">
 			<div class="carousel is-set">
@@ -66,16 +67,31 @@
 	
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div id="section-problems">
+	<section id="section-problems">
 		{{ with .Site.GetPage "page" "problems.md" }}
 			<h2>{{.Title}}</h2>
 			{{ .Content }}
 		{{ end }}
-	</div>
+	</section>
 
-
+	<section id="section-reference-committee">
+		{{ with .Site.GetPage "page" "reference-committee.md" }}
+			<h2>{{.Title}}</h2>
+			{{ .Content }}
+		{{ end }}
+		
+		<div class="card-grid sequential-fadein">
+			{{ range .Site.Data.reference_committee }}
+			<div class="card">
+				<img src="/img/ref/{{ .src }}" alt="{{ .name }}">
+				<h2 class="card-title">{{ .name }}</h2>
+				<i class="card-description">{{ .desc }}</i>
+			</div>
+			{{ end }}
+		</div>
+	</section>
 
 	<br>
 {{ end }}

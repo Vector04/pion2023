@@ -1,8 +1,16 @@
-.site-header {
-    position: fixed;
-    top: 0;
-    z-index: 50;
-    width: 100%;
+.full-page-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding-block: 6rem;
+}
+
+@media (max-width: 40rem) {
+    .full-page-hero {
+        height: auto;
+        padding-bottom: 0;
+    }
 }
 
 #headline {
@@ -85,16 +93,13 @@
     box-shadow: unset;
 }
 
-#section-introduction,
-#section-news,
-#section-sponsors,
-#section-problems {
+section {
     /* not sure.... i am bad at design after all */
     background-color: var(--content-bg);
-    
+
     border-radius: var(--large-border-radius);
-    
-    padding-inline: 2rem;
+
+    padding-inline: var(--page-inline-padding);
     padding-block: 1.5rem;
     margin: 2rem 0;
 
@@ -102,10 +107,16 @@
     box-shadow: 0 10px 15px -3px rgba(229, 228, 251, 1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
-#section-sponsors{
+@media (max-width: 30rem) {
+    .content {
+        padding-inline: 0;
+    }
+}
+
+#section-sponsors {
     padding-inline: 0;
 }
-#section-sponsors h2{
+#section-sponsors h2 {
     padding-inline: 2rem;
 }
 
