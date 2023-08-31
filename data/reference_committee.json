@@ -1,0 +1,43 @@
+{
+    "0": {
+        "name": "Prof. dr. G. 't Hooft",
+        "src": "thooft.jpg",
+        "desc": "Nobel Laureate and Emeritus Professor at Utrecht University"
+    },
+
+    "1": {
+        "name": "Prof. dr. A.L. Watts",
+        "src": "watts.jpg",
+        "desc": "Programme Director Bachelor Physics &amp; Astronomy Amsterdam"
+    },
+
+    "2": {
+        "name": "Prof. dr. J. F. de Boer",
+        "src": "deboer.jpg",
+        "desc": "Head of the Department of Physics &amp; Astronomy VU"
+    },
+
+    "3": {
+        "name": "Prof. dr. P.P.C.C. Verbeek",
+        "src": "verbeek.jpg",
+        "desc": "Rector Magnificus Universiteit van Amsterdam"
+    },
+
+    "4": {
+        "name": "Prof. dr. M. Vreeswijk",
+        "src": "vreeswijk.jpg",
+        "desc": "Professor at University of Amsterdam &amp; researcher at Nikhef"
+    },
+
+    "5": {
+        "name": "Prof. dr. L. Kaper",
+        "src": "kaper.jpg",
+        "desc": "Professor at Anton Pannekoek Institute of Astronomy &amp; Vice Dean Faculty of Science at University of Amsterdam"
+    },
+
+    "6": {
+        "name": "Prof. dr. C. Dominik",
+        "src": "dominik.jpg",
+        "desc": "Professor for astronomy &amp; Director of the Anton Pannekoek Institute of Astronomy"
+    }
+}
