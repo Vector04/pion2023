@@ -18,7 +18,7 @@ The committee op PION 2023 consists of:
 -   Victor Vreede - _Secretary_
 -   Stella Dartée - _Treasurer_
 -   Noël Wallaart
--   Jord Muffels - _Homo erectus_
+-   Jord Muffels
 -   Reijer Boodt
 -   Melvin Room
 

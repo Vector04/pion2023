@@ -285,7 +285,7 @@ blockquote p {
 .card {
     display: grid;
     align-content: start;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
     border-radius: var(--main-border-radius);
     background: hsl(0, 0%, 97%);
     box-shadow: 0 0.3rem 0.3rem rgb(65, 67, 193, 0.1);
@@ -294,12 +294,19 @@ blockquote p {
 
 .card img {
     border-radius: var(--main-border-radius);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .card-title {
     align-self: start;
     font-size: 1.5rem;
     font-weight: 600;
+    padding: 0 0.5rem;
+}
+
+.card-description {
+    padding: 0 0.5rem;
 }
 
 .sequential-fadein > * {
