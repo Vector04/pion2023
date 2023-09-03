@@ -1,12 +1,3 @@
-{{ define "header" }}
-<link
-    rel="stylesheet"
-    href="/css/reference-committee.css"
-    type="text/css"
-    media="all"
-/>
-{{ end }} 
-
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 <hr />
@@ -14,42 +5,13 @@
 {{ .Content }}
 
 <br />
-
 <div class="card-grid sequential-fadein">
-    <div class="card">
-        <img src="/img/ref/thooft.jpg" alt="Prof. dr. G. 't Hooft">
-        <h2 class="card-title">Prof. dr. G. 't Hooft</h2>
-        <i class="card-description">Nobel Laureate and Emeritus Professor at Utrecht University</i>
-    </div>
-
-    <div class="card">
-        <img src="/img/ref/watts.jpeg" alt="Prof. dr. A.L. Watts">
-        <h2 class="card-title">Prof. dr. A.L. Watts</h2>
-        <i class="card-description">Programme Director Bachelor Physics &amp; Astronomy Amsterdam</i>
-    </div>
-
-    <div class="card">
-        <img src="/img/ref/deboer.jpg" alt="Prof. dr. J. F. de Boer">
-        <h2 class="card-title">Prof. dr. J. F. de Boer</h2>
-        <i class="card-description">Head of the Department of Physics &amp; Astronomy VU</i>
-    </div>
-
-    <div class="card">
-        <img src="/img/ref/verbeek.jpg" alt="Prof. dr. P.P.C.C. Verbeek">
-        <h2 class="card-title">Prof. dr. P.P.C.C. Verbeek</h2>
-        <i class="card-description">Rector Magnificus Universiteit van Amsterdam</i>
-    </div>
-
-    <div class="card">
-        <img src="/img/ref/vreeswijk.jpg" alt="Prof. dr. M. Vreeswijk">
-        <h2 class="card-title">Prof. dr. M. Vreeswijk</h2>
-        <i class="card-description">Professor at University of Amsterdam &amp; researcher at Nikhef</i>
-    </div>
-
-    <div class="card">
-        <img src="/img/ref/kaper.jpg" alt="Prof. dr. L. Kaper">
-        <h2 class="card-title">Prof. dr. L. Kaper</h2>
-        <i class="card-description">Professor at Anton Pannekoek Institute of Astronomy &amp; Vice Dean Faculty of Science at University of Amsterdam</i>
-    </div>
+    {{ range .Site.Data.reference_committee }}
+        <div class="card">
+            <img src="/img/ref/{{ .src }}" alt="{{ .name }}">
+            <h2 class="card-title">{{ .name }}</h2>
+            <i class="card-description">{{ .desc }}</i>
+        </div>
+    {{ end }}
 </div>
 {{ end }}

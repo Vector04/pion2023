@@ -1,28 +1,22 @@
-var next = function (el) {
-    if (el.next().length > 0) {
-        return el.next();
-    } else {
-        return $(".carousel-seat").first();
-    }
-};
+const next = (el) => el.next().length ? el.next() : $(".carousel-seat").first();
 
-var progress = function (e) {
-    var el = $(".is-ref").removeClass("is-ref");
-    var new_seat = next(el);
+function progress (e) {
+    let el = $(".is-ref").removeClass("is-ref");
+    let new_seat = next(el);
 
     new_seat.addClass("is-ref").css("order", 1);
-    for (var i = 2, ref = $(".carousel-seat").length; i <= ref; i++) {
+    const ref = $(".carousel-seat").length;
+    for (var i = 2; i <= ref; i++) {
         new_seat = next(new_seat).css("order", i);
     }
 
-    var carousel = $(".carousel");
+    let carousel = $(".carousel");
     carousel.removeClass("is-set");
 
-    return setTimeout(function () {
-        return carousel.addClass("is-set");
-    }, 50);
+    return setTimeout(
+        () => carousel.addClass("is-set"),
+    50);
 };
 
-window.setInterval(function () {
-    progress();
-}, 4000);
+window.setInterval(progress, 3000);
+window.addEventListener("DOMContentLoaded", progress)

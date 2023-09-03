@@ -5,11 +5,11 @@
 {{ end }}
 
 {{define "submain"}}
-	<div class="page-wrapper">
+	<div class="full-page-hero">
 		<div id="headline" class="">
 			<h1 class="leading-none">PION 2023</h1>
 			<span class="text-2xl ">Physics Olympiad</span>
-			<span class="text-lg">18 november 2023</span>
+			<span class="text-lg typewriter"><p>18 november 2023</p></span>
 
 			<!-- <i>
 				PION is an annual interuniversity physics olympiad for bachelor and master students from all over the Netherlands.
@@ -21,11 +21,11 @@
 {{ define "main" }}
 
 	
-	<div id="section-introduction">
+	<section id="section-introduction">
 		{{ .Content }}
-	</div>
+	</section>
 
-	<div id="section-news">
+	<section id="section-news">
 
 		{{- range ( where site.RegularPages "Section" "news" | first 1 )}}
 	
@@ -47,23 +47,50 @@
 				Read More
 			</a>
 		{{- end }}
-	</div>
+	</section>
 
-	<br><br><br>
-
-	<h2>Our Sponsors</h2>
-	<div class="carousel-wrapper">
-		<div class="carousel is-set">
-
-			{{ range ( where site.RegularPages "Section" "sponsors" ) | shuffle }}
-
-				<div class="carousel-seat">
-					<img class="carousel-item" src="/img/logo/{{ .Params.logo}}" alt="">
-				</div>
-
-			{{ end }}
-
+	<section id="section-sponsors">
+		<h2>Our Sponsors</h2>
+		<div class="carousel-wrapper">
+			<div class="carousel is-set">
+	
+				{{ range ( where site.RegularPages "Section" "sponsors" ) | shuffle }}
+	
+					<div class="carousel-seat">
+						<a href="{{.Permalink}}">
+							<img class="carousel-item" src="/img/logo/{{ .Params.logo}}" alt="{{ .Name}}">
+						</a>
+					</div>
+	
+				{{ end }}
+	
+			</div>
 		</div>
-	</div>
+	</section>
+
+	<section id="section-problems">
+		{{ with .Site.GetPage "page" "problems.md" }}
+			<h2>{{.Title}}</h2>
+			{{ .Content }}
+		{{ end }}
+	</section>
+
+	<section id="section-reference-committee">
+		{{ with .Site.GetPage "page" "reference-committee.md" }}
+			<h2>{{.Title}}</h2>
+			{{ .Content }}
+		{{ end }}
+		
+		<div class="card-grid sequential-fadein">
+			{{ range .Site.Data.reference_committee }}
+			<div class="card">
+				<img src="/img/ref/{{ .src }}" alt="{{ .name }}">
+				<h2 class="card-title">{{ .name }}</h2>
+				<i class="card-description">{{ .desc }}</i>
+			</div>
+			{{ end }}
+		</div>
+	</section>
+
 	<br>
 {{ end }}

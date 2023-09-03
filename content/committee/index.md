@@ -17,7 +17,7 @@ The committee op PION 2023 consists of:
 -   Diene van Batenburg - _Chair_
 -   Victor Vreede - _Secretary_
 -   Stella Dartée - _Treasurer_
--   Noel Wallaart
+-   Noël Wallaart
 -   Jord Muffels
 -   Reijer Boodt
 -   Melvin Room

@@ -24,7 +24,7 @@ function sequentialFadeIn(items, delay = 150) {
     Array.prototype.forEach.call(items, function (item) {
         setTimeout(function () {
             item.classList.add("visible");
-        }, delay * i);
+        }, delay * Math.pow(i, 0.8));
         i++;
     });
 }
