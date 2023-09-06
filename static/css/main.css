@@ -285,7 +285,7 @@ blockquote p {
 .card {
     display: grid;
     align-content: start;
-    padding: 0.5rem 0;
+    padding-bottom: 0.5rem;
     border-radius: var(--main-border-radius);
     background: hsl(0, 0%, 97%);
     box-shadow: 0 0.3rem 0.3rem rgb(65, 67, 193, 0.1);
