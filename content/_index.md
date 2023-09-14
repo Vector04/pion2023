@@ -21,3 +21,7 @@ This year's PION will take place on **18 November 2023**, at Science Park Amster
 
 > PION is first and foremost a celebration of physics, and a challenge and source of inspiration for our next generation of scientists and problem-solvers! I am very proud to support their efforts, and I hope that I can encourage you to do the same! <br/>
 > \- _Prof. dr. Anna Watts, Programme director Bachelor Physics & Astronomy Amsterdam_
+
+<br>
+
+<a href="https://nsaweb.nl/activiteiten/pion-2023" class="btn">Register Now</a>
