@@ -283,8 +283,9 @@ blockquote p {
 }
 
 .card {
-    display: grid;
-    align-content: start;
+    display: flex;
+    flex-direction: column;
+    /* align-content: start; */
     padding-bottom: 0.5rem;
     border-radius: var(--main-border-radius);
     background: hsl(0, 0%, 97%);
@@ -296,6 +297,10 @@ blockquote p {
     border-radius: var(--main-border-radius);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    justify-self: center;
+    object-position: 50% 50%;
+    flex-grow: 1;
+    object-fit: contain;
 }
 
 .card-title {
