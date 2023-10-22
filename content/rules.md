@@ -29,6 +29,8 @@ A legitimate participation to PION 2023, abides the following rules:
 
 ## Handing in your work
 
+ -   All answers must be submitted **in english**.
+
  -  After the 3 hours for the test, the participants are given 30 extra minutes to hand in the exercises. Prior to the start of the contest, the exact deadline time will be communicated.
 
  -  If your team encounters problems with handing in your work, please let the committee know as soon as possible! If nothing is heard before the deadline and you hand in nothing, you will be disqualified.
