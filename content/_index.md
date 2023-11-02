@@ -11,7 +11,7 @@ Every year one of the universities in the Netherlands PION and this year the hon
 
 <br>
 
-Conventionally the two winning teams will win a ticket for the international physics olympiad: Physics League Across Numerous Countries for Kick-ass Students (PLANCKS). It will take place in Dublin, Ireland in April 2024. For more info about PLANCKS, please visit this [link](https://iaps.info/events/plancks/).
+Conventionally the two winning teams will win a ticket for the international physics olympiad: Physics League Across Numerous Countries for Kick-ass Students (PLANCKS). It will take place in Dublin, Ireland in May 2024. For more info about PLANCKS, please visit this [link](https://iaps.info/events/plancks/).
 
 <br>
 
