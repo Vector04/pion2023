@@ -46,5 +46,5 @@ A legitimate participation to PION 2023, abides the following rules:
 
  -  At least one team in the top 3 is a bachelor team. Example: if the 3 teams with the highest points are master teams, the third place will go to the bachelor team with the most points.
 
- -  Two teams will be awarded a place in PLANCKS which will be held on 12th to 16th May 2023. At least one of those teams is the bachelor team with the most points. The other team is either the PION first place (if it is a master team) or the PION second place (if a bachelor team is first place).
+ -  Two teams will be awarded a place in PLANCKS which will be held on 23th to 27th May 2024. At least one of those teams is the bachelor team with the most points. The other team is either the PION first place (if it is a master team) or the PION second place (if a bachelor team is first place).
 
