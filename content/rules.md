@@ -17,11 +17,11 @@ A legitimate participation to PION 2023, abides the following rules:
 
 ## General Rules
 
- - It is not allowed to communicate (about the problems) by any means with anyone other than team members.
+ -  It is not allowed to communicate (about the problems) by any means with anyone other than team members.
 
  -  It is allowed to use a scientific, graphical calculator (Ti-83, Ti-84 or a similar model).
 
- -  Mobile phones are tolerated, but can only be used for emergencies, during the duration of the competition.
+ -  Mobile phones are not tolerated.
 
  -  You are allowed to eat, drink and use the bathroom.
 
@@ -47,4 +47,3 @@ A legitimate participation to PION 2023, abides the following rules:
  -  At least one team in the top 3 is a bachelor team. Example: if the 3 teams with the highest points are master teams, the third place will go to the bachelor team with the most points.
 
  -  Two teams will be awarded a place in PLANCKS which will be held on 23th to 27th May 2024. At least one of those teams is the bachelor team with the most points. The other team is either the PION first place (if it is a master team) or the PION second place (if a bachelor team is first place).
-
