@@ -346,3 +346,19 @@ blockquote p {
 .visible {
     opacity: 1 !important;
 }
+
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid var(--dark-one);
+    padding: .5rem;
+    text-align: start;
+}
+
+th {
+    background-color: rgb(105, 125, 151);
+    color: #fff;
+}
