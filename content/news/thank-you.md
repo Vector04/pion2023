@@ -1,6 +1,6 @@
 ---
 title: "PION 2023 is done"
-date: 2023-09-14T09:00:00+02:00
+date: 2023-11-19T14:00:00+02:00
 author: "Reijer Boodt"
 summary: "Thank you for coming to PION, you were great"
 ---
